@@ -145,6 +145,7 @@ VALUES ((SELECT book_id FROM Book WHERE title = 'Alice In Wonderland'), (SELECT 
 	JOIN Student ON Library.student_fk_id = Student.student_id 
 	JOIN Book ON Library.book_fk_id = Book.book_id;
 
+
 	--c)Select the average age of the children, that borrowed the book Alice in Wonderland
 	SELECT AVG(Student.age) 
 	FROM Library 
